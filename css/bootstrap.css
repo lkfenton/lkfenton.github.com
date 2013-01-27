@@ -66,14 +66,7 @@ sub {
   bottom: -0.25em;
 }
 
-img {
-  width: auto\9;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
+
 
 #map_canvas img,
 .google-maps img {
@@ -168,9 +161,7 @@ textarea {
     display: table-header-group;
   }
   tr,
-  img {
-    page-break-inside: avoid;
-  }
+
   img {
     max-width: 100% !important;
   }
@@ -244,6 +235,7 @@ a:hover {
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+          margin:10px;
 }
 
 .img-polaroid {
