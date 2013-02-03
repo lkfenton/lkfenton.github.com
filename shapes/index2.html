@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+</head>
+<body>
+
+	
+	<div class='head'>
+	<div class='eye1'></div>
+	<div class='eye2'></div>
+	<div class='ear1'></div>
+	<div class='ear2'></div>
+	<div class='mouth'>
+	<div class='teeth'></div>
+	</div>
+	</div>
+
+
+	<div class='body'>
+	<div class='tie'></div>
+	<div class='bow'></div>
+	<div class='nobs'></div>
+	</div>
+	
+	<div class='arms'></div>
+	<div class='legs'></div>
+	<div class='diaper'></div>
+  </body>
+  
+  <style>
+
+	body {
+	background-color:#fcfe8b;
+	}
+	
+	
+  .head { 
+    background-color:#a2a590; 
+    width:100px; height:100px; 
+    border-radius:5px;
+    position:relative;
+    top:150px;
+    left:200px;
+    /* -webkit-transition: background-color 1s ease-in-out; */
+  }
+  .head:hover { 
+    background-color:#e95d66; 
+  }
+	.eye1 {
+	background-color:#fefdef;
+	width:15px;
+	height:30px;
+	position:absolute;
+	top:25px;
+	left:15px;
+	}
+	.eye1:after {
+	content:"";
+        width:30px;
+        height:15px;
+        background-color:#fefdef;
+        left:-7px;
+        top:6px;
+        position:absolute;
+	}
+
+	.eye2 {
+	background-color:black;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:25px;
+	left:60px;
+	border-radius:25px;
+	border:5px white solid;
+	}
+	
+	.ear1 {
+	background-color:#85c8a9;
+	width:20px;
+	height:15px;
+	position:absolute;
+	top:25px;
+	left:-23px;
+	}
+	.ear1:after {
+	content:"";
+	background-color:#85c8a9;
+	width:15px;
+	height:20px;
+	position:absolute;
+	top:-3px;
+	}
+	
+	.ear2 {
+	background-color:#85c8a9;
+	width:20px;
+	height:15px;
+	position:absolute;
+	top:25px;
+	left:103px;
+	}
+	.ear2:after {
+	content:"";
+	background-color:#85c8a9;
+	width:15px;
+	height:20px;
+	position:absolute;
+	top:-3px;
+	left:5px;
+	}
+	
+	.mouth {
+	background-color:#fefdef;
+	width:40px;
+	height:15px;
+	position:absolute;
+	top:70px;
+	left:23px;
+	border-top:2px gray dashed;
+	border-radius:5px; 
+	}
+	
+/*----head ends here------*/
+
+
+	.body {
+	background-color:#a2a590;
+	width:90px;
+	height:60px;
+	position:relative;
+	top:170px;
+	left:205px;
+	border-radius:4px;
+	}
+	
+	
+	.bow {
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-right: 25px solid #85c8a9;
+	border-bottom: 12px solid transparent;
+	position:absolute;
+	top:-22px;
+	left:40px;
+	}
+	
+	.bow:after {
+	content:"";
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-left: 25px solid #85c8a9;
+	border-bottom: 12px solid transparent;
+	position:absolute;
+	top:-12px;
+	left:-20px;
+	}
+	
+	.tie {
+	background-color:#85c8a9;
+	border:2px #fefdef solid;
+	width:10px;
+	height:10px;
+	position:absolute;
+	top:-17px;
+	left:35px;
+	}
+	
+/*----head ends here------*/
+	
+	.diaper {
+	border-top: 40px solid #fefdef;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 50px;
+	position:relative;
+	top:160px;
+	left:200px;
+	}
+/*----diaper ends here------*/	
+
+	.arms {
+	background-color:#a2a590;
+	width:40px;
+	height:30px;
+	position:absolute;
+	left:170px;
+	top:280px;
+	}
+	.arms:after {
+	content:"";
+	background-color:#a2a590;
+	width:40px;
+	height:30px;
+	position:absolute;
+	left:135px;
+	}
+	
+/*----arms ends here------*/	
+
+	.legs {
+	-webkit-transform: translate(100px) rotate(40deg);
+	background-color:#a2a590;
+	width:50px;
+	height:40px;
+	position:absolute;
+	top:350px;
+	left:190px;
+	}
+
+	.legs:after {
+	content:'';
+	-webkit-transform: translate(100px) rotate(110deg);
+	background-color:#a2a590;
+	width:50px;
+	height:40px;
+	position:absolute;
+	top:75px;
+	left:-190px;
+	
+	}
+</style>
+</html>
