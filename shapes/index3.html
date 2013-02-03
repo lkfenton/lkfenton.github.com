@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+</head>
+<body>
+
+	<div class='wing2'></div>
+	<div class='head'>
+	<div class='eye1'></div>
+	<div class='eye2'></div>
+	</div>
+
+<div class='wing1'></div>
+
+<div class='beak'></div>
+
+  </body>
+  
+  <style>
+
+	body {
+	background-color:#fffeea;
+	}
+	
+
+ 	
+	.head {
+	display:block;
+   width: 232px;
+   height: 360px;
+   background-color:#babb6b;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:50%  50%  50%  50%  / 60%   60%   40%  40%;
+   position:relative;
+   top:150px;
+   left:200px;
+   border-left:10px #d9de9b solid;
+	}
+	
+	.eye1 {
+	position:relative;
+	width:35px;
+	height:35px;
+	background-color:black;
+	border-radius:25px;
+	top:130px;
+	left:150px;
+	}
+	
+	.eye1:after {
+	content:'';
+	position:absolute;
+	width:17px;
+	height:17px;
+	background-color:white;
+	border-radius:25px;
+	left:15px;
+	}
+	
+	.eye2 {
+	position:absolute;
+	width:30px;
+	height:30px;
+	background-color:black;
+	border-radius:25px;
+	top:115px;
+	left:-45px;
+	}
+	
+	.eye2:after {
+	content:'';
+	width:15px;
+	height:15px;
+	background-color:white;
+	border-radius:25px;
+	position:absolute;
+	left:10px;
+	top:-3px;
+	}
+	
+	.beak{
+	position:relative;
+   	left:185px;
+   	top:-10px;
+    width: 70px;
+    height: 90px;
+    background:#fca44a;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 0 50px 50px;
+	}
+	
+	.beak:after {
+	content:'';
+	position:absolute;
+	left:-15px;
+	top:-50px;
+    width: 90px;
+    height: 120px;
+    background:#fca44a;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 60px 10px;
+    border-bottom:2px black solid;
+	}
+ 
+ 	.wing1 {
+ 	background-color:#babb6b;
+ 	position:absolute;
+	left:340px;
+	top:370px;
+    width: 130px;
+    height: 250px;
+    -moz-border-radius: 50px 70px 10px 20px;
+    border-radius: 60px 50px 5px 100px;
+    -webkit-transform:rotate(30deg);
+    border-left:10px #d9de9b solid;
+ 	}
+ 	
+ 	.wing2 {
+ 	background-color:#babb6b;
+ 	position:absolute;
+	left:100px;
+	top:270px;
+    width: 130px;
+    height: 250px;
+    -moz-border-radius: 50px 70px 10px 20px;
+    border-radius: 50px 90px 130px 5px;
+    -webkit-transform:rotate(130deg);
+ 	}
+ 
+</style>
+</html>
