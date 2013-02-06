@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+
+	<div class='suit'>
+	<div class='spoke'></div>
+	<div class='spoke2'></div>
+	</div>
+	
+	<div class='head'></div>
+	<div class='bottom'></div>
+	
+</body>
+
+<style>
+
+	
+	
+	.suit {
+	position:relative;
+	top:200px;
+	left:200px;
+	display:block;
+	width: 126px;
+	height: 170px;
+	background-color: purple;
+	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+	border-radius:80%  80%  50%  50%  / 60%   60%   40%  40%;
+	}
+	
+	.spoke {
+	position: absolute;
+    left: -10px;
+    top: 3px;
+    width: 30px;
+    height: 20px;
+    background-color:white;
+    border:3px purple solid;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform:rotate(-50deg)
+	}
+	
+	.spoke2 {
+	position: absolute;
+    left:100px;
+    top: 5px;
+    width: 30px;
+    height: 20px;
+    background-color:white;
+    border:3px purple solid;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform:rotate(52deg)
+	}
+
+
+	
+	.head {
+	background-color:pink;
+	width:90px;
+	height:70px;
+	border-radius:50px;
+	position:absolute;
+	top:250px;
+	left:225px;
+	border-top:4px gray solid;
+	}
+	.head:after {
+	content:'';
+	background-color:gray;
+	width:90px;
+	height:80px;
+	top:-7px;
+	left:-4px;
+	border-radius:50px;
+	position:absolute;
+	border:4px gold dashed;
+	opacity:0.6;
+	}
+	
+	.bottom {
+	border-bottom: 50px solid purple;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 50px;
+	position:absolute;
+	top:200px;
+	left:25px;
+	}
+
+</style>
+</html>
