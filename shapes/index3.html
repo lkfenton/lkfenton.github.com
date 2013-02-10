@@ -4,7 +4,7 @@
   <head>
 </head>
 <body>
-
+	<div class='bird'>
 	<div class='wing2'></div>
 	<div class='head'>
 	<div class='eye1'></div>
@@ -15,10 +15,21 @@
 
 <div class='beak'></div>
 
+</div>
+
   </body>
   
   <style>
+@-webkit-keyframes bird {
+0%{-webkit-transform: rotateY(180deg);}
+50%{-webkit-transform: rotateY(-180deg);}
+}
 
+	.bird {
+	position:relative;
+	left:100px;
+	-webkit-animation:bird 5s infinite;
+	}
 	body {
 	background-color:#fffeea;
 	}
@@ -103,6 +114,11 @@
     border-bottom:2px black solid;
 	}
  
+ @-webkit-keyframes flap {
+0%{-webkit-transform: rotate(50deg);}
+100%{-webkit-transform: rotate(-50deg);}
+}
+ 
  	.wing1 {
  	background-color:#babb6b;
  	position:absolute;
@@ -112,20 +128,28 @@
     height: 250px;
     -moz-border-radius: 50px 70px 10px 20px;
     border-radius: 60px 50px 5px 100px;
+    -webkit-transform-origin:top center;
     -webkit-transform:rotate(30deg);
     border-left:10px #d9de9b solid;
+    -webkit-animation:flap 1s linear infinite;
  	}
  	
+@-webkit-keyframes flap2 {
+0%{-webkit-transform: rotate(-90deg);}
+100%{-webkit-transform: rotate(90deg);}
+}
  	.wing2 {
  	background-color:#babb6b;
  	position:absolute;
 	left:100px;
-	top:270px;
+	top:350px;
     width: 130px;
     height: 250px;
     -moz-border-radius: 50px 70px 10px 20px;
+     -webkit-transform-origin:top right;
     border-radius: 50px 90px 130px 5px;
     -webkit-transform:rotate(130deg);
+    -webkit-animation:flap2 2s linear infinite;
  	}
  
 </style>
