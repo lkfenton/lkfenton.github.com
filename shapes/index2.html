@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	
+	<div class='all'>
 	<div class='head'>
 	<div class='eye1'></div>
 	<div class='eye2'></div>
@@ -24,8 +24,16 @@
 	</div>
 	
 	<div class='arms'></div>
-	<div class='legs'></div>
+	<div class='leg1'></div>
+	<div class='leg2'></div>
 	<div class='diaper'></div>
+	
+	</div>
+	
+	
+
+
+
   </body>
   
   <style>
@@ -34,7 +42,12 @@
 	background-color:#fcfe8b;
 	}
 	
-	
+	.all {
+	position:relative;
+	left:100px;
+	-webkit-transition: -webkit-transform 2s ease-in-out, 
+                        background-color 3s ease-in;
+	}
   .head { 
     background-color:#a2a590; 
     width:100px; height:100px; 
@@ -42,11 +55,16 @@
     position:relative;
     top:150px;
     left:200px;
-    /* -webkit-transition: background-color 1s ease-in-out; */
+ -webkit-transition: -webkit-transform 2s ease-in-out, 
+                        background-color 3s ease-in;
   }
   .head:hover { 
+     -webkit-transform: rotate(2turn) scale(1.25);
     background-color:#e95d66; 
   }
+  
+
+
 	.eye1 {
 	background-color:#fefdef;
 	width:15px;
@@ -54,6 +72,7 @@
 	position:absolute;
 	top:25px;
 	left:15px;
+	
 	}
 	.eye1:after {
 	content:"";
@@ -74,8 +93,24 @@
 	left:60px;
 	border-radius:25px;
 	border:5px white solid;
+	
 	}
 	
+	.eye2:hover {
+	-webkit-animation:eye 1s infinite;
+	}
+	@-webkit-keyframes eye
+{
+0%   {background:red;}
+25%  {background:blue;}
+50%  {background:purple;}
+100% {background:orange;}
+}
+	
+	  @-webkit-keyframes ear {
+  0% {left: -23px; }
+  50% {left:-35px; }
+}
 	.ear1 {
 	background-color:#85c8a9;
 	width:20px;
@@ -83,6 +118,7 @@
 	position:absolute;
 	top:25px;
 	left:-23px;
+	 -webkit-animation:ear 1s linear infinite;
 	}
 	.ear1:after {
 	content:"";
@@ -93,6 +129,10 @@
 	top:-3px;
 	}
 	
+	 @-webkit-keyframes ear2 {
+  0% {left: 103px; }
+  50% {left:125px; }
+}
 	.ear2 {
 	background-color:#85c8a9;
 	width:20px;
@@ -100,6 +140,7 @@
 	position:absolute;
 	top:25px;
 	left:103px;
+	-webkit-animation:ear2 1s linear infinite;
 	}
 	.ear2:after {
 	content:"";
@@ -111,6 +152,10 @@
 	left:5px;
 	}
 	
+	@-webkit-keyframes mouth {
+   0% {height:15px; }
+   100% {height:5px;}
+  }
 	.mouth {
 	background-color:#fefdef;
 	width:40px;
@@ -120,7 +165,10 @@
 	left:23px;
 	border-top:2px gray dashed;
 	border-radius:5px; 
+	-webkit-animation:mouth 1s infinite;
 	}
+	
+	
 	
 /*----head ends here------*/
 
@@ -133,6 +181,7 @@
 	top:170px;
 	left:205px;
 	border-radius:4px;
+	 
 	}
 	
 	
@@ -183,13 +232,22 @@
 	}
 /*----diaper ends here------*/	
 
+@-webkit-keyframes arms {
+   0% { -webkit-transform: rotate(5deg); }
+   50% {-webkit-transform: rotate(10deg);}
+   70% {-webkit-transform: rotate(-10deg);}
+   100% {  -webkit-transform: rotate(10deg); }
+  }
+
 	.arms {
 	background-color:#a2a590;
 	width:40px;
 	height:30px;
 	position:absolute;
-	left:170px;
-	top:280px;
+	left:160px;
+	top:270px;
+	
+	-webkit-animation:arms 2s infinite;
 	}
 	.arms:after {
 	content:"";
@@ -197,31 +255,43 @@
 	width:40px;
 	height:30px;
 	position:absolute;
-	left:135px;
+	left:145px;
 	}
 	
 /*----arms ends here------*/	
 
-	.legs {
-	-webkit-transform: translate(100px) rotate(40deg);
+@-webkit-keyframes leg1 {
+   0% { -webkit-transform: rotate(60deg); }
+   50% {-webkit-transform:rotate(40deg);}
+   100% {-webkit-transform: rotate(35deg); }
+  }
+
+	.leg1 {
 	background-color:#a2a590;
 	width:50px;
 	height:40px;
 	position:absolute;
-	top:350px;
-	left:190px;
+	top:340px;
+	left:290px;
+	-webkit-transform:rotate(60deg);
+	-webkit-animation:leg1 2s infinite;
+	
 	}
 
-	.legs:after {
-	content:'';
-	-webkit-transform: translate(100px) rotate(110deg);
+@-webkit-keyframes leg2 {
+   0% { -webkit-transform: rotate(-30deg); }
+   50% {-webkit-transform:rotate(-35deg);}
+   100% {-webkit-transform: rotate(-45deg); }
+  }
+	.leg2 {
+	-webkit-transform:rotate(-30deg);
 	background-color:#a2a590;
 	width:50px;
 	height:40px;
 	position:absolute;
-	top:75px;
-	left:-190px;
-	
+	top:345px;
+	left:170px;
+	-webkit-animation:leg2 2s infinite;
 	}
 </style>
 </html>
