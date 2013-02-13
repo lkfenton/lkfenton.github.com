@@ -1,20 +1,18 @@
-HOW TO MAKE BUTTON GUESSING GAME
-
-
-
-<button onclick='checkGuess(0);'>0</button>
+  <button onclick='checkGuess(0);'>0</button>
   <button onclick='checkGuess(1);'>1</button>
   <button onclick='checkGuess(2);'>2</button>
   <button onclick='checkGuess(3);'>3</button>
   <button onclick='checkGuess(4);'>4</button>
   <button onclick='checkGuess(5);'>5</button>
   <script>
-     var num = Math.round(Math.random()*5);
+    var num = generateRandom();
 
     
     function checkGuess(guess) {
+      console.log (num)
       if(guess == num){
         alert("correct" + guess);
+         num = generateRandom();
       } else {
         alert("wrong" + guess);
         if (guess >= num){
@@ -26,5 +24,8 @@ HOW TO MAKE BUTTON GUESSING GAME
         
       }
      }
-     // Then make it call the right function
+    
+    function generateRandom(){
+      return Math.round(Math.random()*5);
+    }
   </script>
