@@ -1,0 +1,79 @@
+<script>
+  $(function() {
+  $(".card").click(function(){
+  $(this).toggleClass("flip");
+
+});
+  });
+</script>
+
+
+<style>
+  
+  
+  
+  .card { 
+    position:relative;
+    width:131px; 
+    height:155px;
+    float:left;
+    margin-right:20px;
+  }
+
+  .card > div {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:131px;
+    height:155px;
+    text-align:center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+  }
+
+  .card .front {
+    position:relative;
+    z-index:2;
+    -webkit-transform: rotate(0deg) rotateY(0deg);
+    background:url(images/card-back.png) no-repeat left top;
+  }
+
+  .card .back {
+    z-index:1;
+    -webkit-transform: rotateX(0deg) rotateY(-180deg);
+    background:url(images/card-front.png) no-repeat left top;
+  }
+
+  .card .back p {
+    padding-top:50px;
+  }
+
+  .flip .front {
+     z-index: 1;
+     -webkit-transform: rotateY(180deg);
+  }
+
+  .flip .back {
+    z-index:2;
+    -webkit-transform: rotateY(0deg);
+  }
+
+</style>
+
+<div class='card'>
+  <div class='front'></div>
+  <div class='back'><p>Card 1</p></div>
+</div>
+
+<div class='card'>
+  <div class='front'></div>
+  <div class='back'><p>Card 2</p></div>
+</div>
+
+<div class='card'>
+  <div class='front'></div>
+  <div class='back'><p>Card 3</p></div>
+</div>
+
+S
