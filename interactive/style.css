@@ -61,27 +61,64 @@ body{
 	
 	<!--WHY THE HELL DOES BACKGOUND NOT WORK-->
 	
-#title,#number1-wrapper,#number2-wrapper,#number3-wrapper,#number4-wrapper,#number5-wrapper{
+#title-wrapper,#number1-wrapper,#number2-wrapper,#number3-wrapper,#number4-wrapper,#number5-wrapper{
 	background-image:url('images/background.png');
 	background-repeat:repeat;
 	width:960px;
 	margin:0 auto;
 	max-width:100%;
 	}
+
 	
 .title-image {
-margin-left:5%;
+	float:left;
+	width:100%;
+	margin-left:25%;
 }	
 
+.fenway{
+	width:960px;
+	margin:0 auto;
+	float:left;
+}
+.fenway p {
+	padding:3%;
+	margin-left:20%;
+}
+.rat {
+	margin-top:-25%;
+}
+.feet {
+	margin-left:25%;
+	margin-top:-5%;
+}
 
 
+.expensive{
+	float:left;
+	width:960px;
+	margin:0 auto;
+	padding:5%;
+	margin-left:20%;
+}
 
 
+.ducks{
+	width:40%;
+	float:left;
+	margin-left:5%;
+	margin-bottom:15%;
+}
 
-
-
-
-
+.traffic{
+	float:right;
+	width:40%;
+	margin-right:5%;
+	margin-bottom:15%;
+}
+.headlights{
+	margin-top:-80%;
+}
 
 
 /* Clearfix */
