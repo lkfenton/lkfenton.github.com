@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"> 
+	<meta charset="utf-8"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<title>Work please</title>
+	<title>scrollorama</title>
 	
 	<link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="author" href="https://plus.google.com/107766061849006545830"/>
+	
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
-  	
 </head>
-
 <body>
-	
+
 	<div class="scrollblock" id="intro">
-		<h1 id="title">Boston</h1>
+		<h1 id="title"><img src="images/ten-things.png"/></h1>
+		<p id="author">
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</p>
+		
+	
+	</div>
+
+	
+	<div class="scrollblock" id="examples-pin">
+		<h1>Number One</h1>
+		<p>
+		Living in Fenway Sucks</p>
+		<img src="images/fenway.png"/>
+		
+		
+		<h3 id="unpin">Number Two</h3>
+	</div>
+	
+	<div class="scrollblock">
+		<h1>Number Two</h1>
+		
+		
+		
+		<h3 id="unpin2">Number Three</h3>
 	</div>
 	
 	
-	<div class="scrollblock" id="title">
-		<h3 id="fenway">Testing</h3>
+	<div class="scrollblock" id="examples-transition">
+		<h1>Number One</h1>
+		<h3 id="fade-in">Fade In</h3>
+		<h3 id="fly-in">Fly In</h3>
+		<h3 id="rotate-in">Rotate In</h3>
+		<h3 id="zoom-in">Zoom In</h3>
+		<p id="any"><small><span class="accent">&#9733;</span> Any numeric CSS property <span class="accent">&#9733;</span></small></p>
+	</div>
+	
+	<div class="scrollblock" id="examples-parallax">
+		<h2 id="parallax1">Parallax</h2>
+		<h3 id="parallax2">Parallax</h3>
+		<h3 id="parallax3">Parallax</h3>
+	</div>
+	
+	<div class="scrollblock" id="examples-easing">
+		<h2 id="easing">Easing</h2>
+		<div id="easing_bottom"></div>
 	</div>
 	
 	
-
-
-
-
-
-
-</body>
-
-<script>
+	
+	<script>
 		$(document).ready(function() {
 			
 			// initialize the plugin, pass in the class selector for the sections of content (blocks)
@@ -49,28 +81,13 @@
 					.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
 			});
 			
-			// lettering.js for coolness
-			$('#title').lettering();
-			$('#title span')
-				.css('display','block')
-				.css('float','left');
-			$('.char9').css('padding-left','6px');
 			
-			// animate the title letters to explode
-			scrollorama
-				.animate('#title',{ duration: 150, property:'zoom', end: 3 })
-				
-			
-			$('#title span').each(function() {
-				scrollorama
-					.animate($(this),{ duration: 200, property:'top', end: Math.random()*120-180 })
-					
-			});
-			
+		
 			// animate some examples
 			scrollorama
-				.animate('#unpin',{ duration:500, property:'padding-top', start:400, pin:true })
-				.animate('#fenway',{ delay: 400, duration: 300, property:'opacity', start:0 })
+				.animate('#unpin',{ duration:800, property:'padding-top', start:900, pin:true })
+				.animate('#unpin2',{ duration:800, property:'padding-top', start:900, pin:true })
+				.animate('#fade-in',{ delay: 400, duration: 300, property:'opacity', start:0 })
 				.animate('#fly-in',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 })
 				.animate('#rotate-in',{ duration: 800, property:'rotate', start:720 })
 				.animate('#zoom-in',{ delay: 200, duration: 600, property:'zoom', start:8 })
@@ -118,4 +135,4 @@
 
 	</script>
 
-</html>
+</body></html>

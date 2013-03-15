@@ -49,7 +49,7 @@ table {
 }
 
 
-<!--styling starts here-->
+
 	
 body{	
 	background-image:url('images/background.png');
@@ -59,7 +59,7 @@ body{
 	max-width:100%;
 	}
 	
-	<!--WHY THE HELL DOES BACKGOUND NOT WORK-->
+
 	
 #title-wrapper,#number1-wrapper,#number2-wrapper,#number3-wrapper,#number4-wrapper,#number5-wrapper{
 	background-image:url('images/background.png');
