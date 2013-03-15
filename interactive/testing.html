@@ -8,11 +8,15 @@
 	<link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="author" href="https://plus.google.com/107766061849006545830"/>
+
 	
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
+	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
 </head>
 <body>
 
@@ -32,20 +36,34 @@
 		Living in Fenway Sucks<br>
 		<h3 id="rats"><img src="images/ratss.png"/>
 		
-		<h3 id="unpin">There are rats EVERYWHERE</h3>
+		<h3 id="unpin">There are rats EVERYWHERE</h3></p>
 	</div>
 	
 	<div class="scrollblock">
 		<h1>Number Two</h1>
+		<span><img src="images/money.png" id="money"/><img src="images/no-money.png" id="no-money"/></h2><br>
+		<h3 id="expensive">Jk! It's super expensive</h3>
+		</span>
 		
+		<h3 id="unpin2"><img src="images/arrow.png"/></h3>
+	</div>
+	
+	<div class="scrollblock" id="car-duck">
+		<h1>Numbers Three and Four</h1>
+			<span id="duck">
+			<img src="images/green-duck.png"/>
+			</span>
+			<span id="car">
+				<img src="images/car.gif"/>
+			</span>
+			
 		
-		
-		<h3 id="unpin2">Number Three</h3>
+	
 	</div>
 	
 	
 	<div class="scrollblock" id="examples-transition">
-		<h1>Number One</h1>
+		
 		<h3 id="fade-in">Fade In</h3>
 		<h3 id="fly-in">Fly In</h3>
 		<h3 id="rotate-in">Rotate In</h3>
@@ -86,8 +104,10 @@
 			scrollorama
 				.animate('#unpin',{ duration:500, property:'padding-top', start:500, pin:true })
 				.animate('#rats',{ delay: 200, duration: 300, property:'opacity', start:0 })
+				.animate('#no-money',{ delay: 900, duration: 150, property:'opacity', start:0 })
+				.animate('#expensive',{ delay: 900, duration: 200, property:'left', start:-1400, end:0 })
 				.animate('#unpin2',{ duration:1000, property:'padding-top', start:1200, pin:true })
-				.animate('#fade-in',{ delay: 400, duration: 300, property:'opacity', start:0 })
+				.animate('#fade-in',{ delay: 500, duration: 300, property:'opacity', start:0 })
 				.animate('#fly-in',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 })
 				.animate('#rotate-in',{ duration: 800, property:'rotate', start:720 })
 				.animate('#zoom-in',{ delay: 200, duration: 600, property:'zoom', start:8 })
@@ -121,18 +141,5 @@
 		});
 	</script>
 
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-2821890-9']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
 
 </body></html>
