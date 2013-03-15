@@ -29,11 +29,10 @@
 	<div class="scrollblock" id="examples-pin">
 		<h1>Number One</h1>
 		<p>
-		Living in Fenway Sucks</p>
-		<img src="images/fenway.png"/>
+		Living in Fenway Sucks<br>
+		<h3 id="rats"><img src="images/ratss.png"/>
 		
-		
-		<h3 id="unpin">Number Two</h3>
+		<h3 id="unpin">There are rats EVERYWHERE</h3>
 	</div>
 	
 	<div class="scrollblock">
@@ -85,8 +84,9 @@
 		
 			// animate some examples
 			scrollorama
-				.animate('#unpin',{ duration:800, property:'padding-top', start:900, pin:true })
-				.animate('#unpin2',{ duration:800, property:'padding-top', start:900, pin:true })
+				.animate('#unpin',{ duration:500, property:'padding-top', start:500, pin:true })
+				.animate('#rats',{ delay: 200, duration: 300, property:'opacity', start:0 })
+				.animate('#unpin2',{ duration:1000, property:'padding-top', start:1200, pin:true })
 				.animate('#fade-in',{ delay: 400, duration: 300, property:'opacity', start:0 })
 				.animate('#fly-in',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 })
 				.animate('#rotate-in',{ duration: 800, property:'rotate', start:720 })

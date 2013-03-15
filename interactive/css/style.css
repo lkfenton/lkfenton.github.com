@@ -50,8 +50,7 @@ h3 {
 p {
 	width: 80%;
 	margin: 20px auto;
-	text-shadow: 0 2px 1px #000;
-	color: #C5C3DE;
+	color: black;
 }
 
 a, a:visited {
