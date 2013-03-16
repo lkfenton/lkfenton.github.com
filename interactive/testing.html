@@ -21,8 +21,9 @@
 <body>
 
 	<div class="scrollblock" id="intro">
-		<h1 id="title"><img src="images/ten-things.png"/></h1>
+		<h1 id="title">Ten Things I've learned while living in Boston</h1>
 		<p id="author">
+		<img src="images/scroll.gif"/>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</p>
 		
@@ -49,16 +50,26 @@
 	</div>
 	
 	<div class="scrollblock" id="car-duck">
-		<h1>Numbers Three and Four</h1>
-			<span id="duck">
-			<img src="images/green-duck.png"/>
+			<span id="walking">
+				<img src="images/walking.gif"/>
 			</span>
+				
 			<span id="car">
-				<img src="images/car.gif"/>
+				<img src="images/car.gif"/><br>
+		 	</span>
+		 	
+		 	<span id="sidewalk">
+				<h1>Number Three</h1>
+				<p>Learning to stop for traffic</p>
 			</span>
 			
-		
+	</div>
 	
+	
+	<div class="scrollblock" id="number-four">
+		<h2 id="ducks"><img src="images/ducks.png"/></h2>
+		<h3 id="ducks2">Number Four</h3>
+		<h3 id="ducks3">I love the ducks!</h3>
 	</div>
 	
 	
@@ -71,11 +82,7 @@
 		<p id="any"><small><span class="accent">&#9733;</span> Any numeric CSS property <span class="accent">&#9733;</span></small></p>
 	</div>
 	
-	<div class="scrollblock" id="examples-parallax">
-		<h2 id="parallax1">Parallax</h2>
-		<h3 id="parallax2">Parallax</h3>
-		<h3 id="parallax3">Parallax</h3>
-	</div>
+	
 	
 	<div class="scrollblock" id="examples-easing">
 		<h2 id="easing">Easing</h2>
@@ -103,10 +110,12 @@
 			// animate some examples
 			scrollorama
 				.animate('#unpin',{ duration:500, property:'padding-top', start:500, pin:true })
-				.animate('#rats',{ delay: 200, duration: 300, property:'opacity', start:0 })
+				.animate('#rats',{ delay: 300, duration: 200, property:'opacity', start:0 })
 				.animate('#no-money',{ delay: 900, duration: 150, property:'opacity', start:0 })
 				.animate('#expensive',{ delay: 900, duration: 200, property:'left', start:-1400, end:0 })
 				.animate('#unpin2',{ duration:1000, property:'padding-top', start:1200, pin:true })
+				.animate('#walking',{ delay: 200, duration: 600, property:'left', start:-1400, end:0 })
+		
 				.animate('#fade-in',{ delay: 500, duration: 300, property:'opacity', start:0 })
 				.animate('#fly-in',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 })
 				.animate('#rotate-in',{ duration: 800, property:'rotate', start:720 })
@@ -116,8 +125,9 @@
 			
 			// animate the parallaxing
 			scrollorama
-				.animate('#parallax2',{ delay: 400, duration: 600, property:'top', start:800, end:-800 })
-				.animate('#parallax3',{ delay: 200, duration: 1200, property:'top', start:500, end:-500 });
+			
+				.animate('#ducks2',{ delay: 400, duration: 600, property:'top', start:800, end:-800 })
+				.animate('#ducks3',{ delay: 200, duration: 1200, property:'top', start:500, end:-500 });
 			
 			// animate some easing examples
 			var $easing = $('#easing'),

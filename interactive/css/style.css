@@ -1,12 +1,6 @@
-/*
-	COLORS
- 
-
-	
-*/
-
 body {
-	background:#ffffff;
+	background:url("images/background.png");
+	background:repeat;
 	font-family: Georgia, Times New Roman, Times, serif;
 	font-weight: bold;
 	font-size: 1em;
@@ -18,7 +12,7 @@ h1 {
 	font-weight: normal;
 
 	font-family: "Arial Black",Gadget,sans-serif;
-	color: black;
+	color:#f71635;
 	text-shadow: 0 2px 1px #000;
 	line-height: 1em;
 }
@@ -114,6 +108,10 @@ blockquote {
 	padding-bottom:10%;
 }
 
+#author{
+	padding-top:10%;
+}
+
 #title {
 	margin: 60px auto 0;
 	width: 960px;
@@ -138,27 +136,27 @@ blockquote {
 	padding-top:15%;
 }
 
-#examples-parallax {
+#number-four{
 	overflow: hidden;
 }
 
-#parallax2 {
+#ducks2 {
 	position: absolute;
 	top: 200px;
-	left: -50px;
+	left:250px;
 	color: #C5C3DE;
-	opacity: .2;
-	font-size: 210px;
+	opacity: .5;
+	font-size: 3em;
 	text-shadow: none;
 }
 
-#parallax3 {
+#ducks3 {
 	position: absolute;
 	top: 320px;
-	right: 40px;
+	right: 400px;
 	color: #C5C3DE;
 	opacity: .4;
-	font-size: 160px;
+	font-size: 2em;
 	text-shadow: none;
 }
 
