@@ -14,7 +14,7 @@ h1 {
 	font-family: "Arial Black",Gadget,sans-serif;
 	color:#f71635;
 	text-shadow: 0 2px 1px #000;
-	line-height: 1em;
+	line-height: 1.4em;
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
 	font-weight: normal;
 	margin: 0;
 	text-shadow: 0 2px 1px #000;
-	color: #FFB000;
+	color: #fec339;
 	font-family:"Arial Black",Gadget,sans-serif;
 	text-transform: uppercase;
 }
@@ -31,7 +31,7 @@ h3 {
 	font-size: 40px;
 	font-weight: normal;
 	margin: 0;
-	color: #D92B00;
+	color: #fec339;
 	text-shadow: 0 2px 1px #000;
 	font-family:"Arial Black",Gadget,sans-serif;
 	text-transform: uppercase;
@@ -40,7 +40,9 @@ h3 {
 p {
 	width: 80%;
 	margin: 20px auto;
-	color: black;
+	color:#b7b7b7;
+	font-size:1.2em;
+	text-shadow: 0 1px 1px #000;
 }
 
 
@@ -144,7 +146,7 @@ blockquote {
 	position: absolute;
 	top: 200px;
 	left:250px;
-	color: #C5C3DE;
+	color: #ae0079;
 	opacity: .5;
 	font-size: 3em;
 	text-shadow: none;
@@ -154,7 +156,7 @@ blockquote {
 	position: absolute;
 	top: 320px;
 	right: 400px;
-	color: #C5C3DE;
+	color: #ae0079;
 	opacity: .4;
 	font-size: 2em;
 	text-shadow: none;
