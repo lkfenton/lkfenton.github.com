@@ -22,7 +22,7 @@
 
 	<div class="scrollblock" id="intro">
 		<h1 id="title">Ten Things I've learned while living in Boston</h1>
-		<p id="author">
+		<p id="scrolling">
 		<img src="images/scroll.gif"/>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</p>
@@ -35,7 +35,7 @@
 		<h1>Number One</h1>
 		<p>
 		Living in Fenway Sucks<br>
-		<h3 id="rats"><img src="images/ratss.png"/>
+		<h3 id="rats"><img src="images/ratss.png"/></h3>
 		
 		<h3 id="unpin">There are rats EVERYWHERE</h3></p>
 	</div>
@@ -49,7 +49,7 @@
 		<h3 id="unpin2"><img src="images/bills.png"/></h3>
 	</div>
 	
-	<div class="scrollblock" id="car-duck">
+	<div class="scrollblock" id="car-traffic">
 			<span id="walking">
 				<img src="images/walking.gif"/>
 			</span>
@@ -72,13 +72,13 @@
 		<h3 id="ducks3">I love the ducks!</h3>
 	</div>
 	
-		<div class="scrollblock" id="bike">
+	<div class="scrollblock" id="bike">
 		<h1>Number Five</h1>
-			<span id="riding">
-				<img src="images/bike.png"/>
-			</span>
-			
-		</div>	
+		
+		<h3 id="pink-bike"><img src="images/bike.png"/></h3>
+		
+		<h3 id="unpin3">Just remember to lock it up</h3></p>
+	</div>
 	
 	<div class="scrollblock" id="examples-transition">
 		
@@ -121,8 +121,10 @@
 				.animate('#no-money',{ delay: 900, duration: 150, property:'opacity', start:0 })
 				.animate('#expensive',{ delay: 900, duration: 200, property:'left', start:-1400, end:0 })
 				.animate('#unpin2',{ duration:900, property:'padding-top', start:1200, pin:true })
+				.animate('#unpin3',{ duration:400, property:'padding-top', start:700, pin:true })
 				.animate('#walking',{ delay: 200, duration: 600, property:'left', start:-1400, end:0 })
-		
+				.animate('#pink-bike',{ delay: 200, duration: 400, property:'right', start:-1400, end:1400 })
+				
 				.animate('#fade-in',{ delay: 500, duration: 300, property:'opacity', start:0 })
 				.animate('#fly-in',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 })
 				.animate('#rotate-in',{ duration: 800, property:'rotate', start:720 })

@@ -110,7 +110,7 @@ blockquote {
 	padding-bottom:10%;
 }
 
-#author{
+#scrolling{
 	padding-top:10%;
 }
 
@@ -134,8 +134,8 @@ blockquote {
 	overflow: hidden;
 }
 
-#car-duck{
-	padding-top:15%;
+#car-traffic{
+	padding-top:20%;
 }
 
 #number-four{
@@ -150,6 +150,10 @@ blockquote {
 	opacity: .5;
 	font-size: 3em;
 	text-shadow: none;
+}
+
+#bike{
+	margin-top:0;
 }
 
 #ducks3 {
