@@ -18,12 +18,12 @@ h1 {
 }
 
 h2 {
-	font-size: 80px;
+	font-size: 2em;
 	font-weight: normal;
 	margin: 0;
 	text-shadow: 0 2px 1px #000;
 	color: #fec339;
-	font-family:"Arial Black",Gadget,sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	text-transform: uppercase;
 }
 
@@ -31,18 +31,19 @@ h3 {
 	font-size: 40px;
 	font-weight: normal;
 	margin: 0;
-	color: #fec339;
+	color: #7fcbbf;
 	text-shadow: 0 2px 1px #000;
-	font-family:"Arial Black",Gadget,sans-serif;
-	text-transform: uppercase;
+	font-family: 'Libre Baskerville', serif;
+
 }
 
 p {
 	width: 80%;
 	margin: 20px auto;
-	color:#b7b7b7;
+	color:#a5a5a5;
 	font-size:1.2em;
-	text-shadow: 0 1px 1px #000;
+	font-family: "Libre Baskerville", serif;
+	
 }
 
 
@@ -121,7 +122,7 @@ blockquote {
 
 }
 
-#examples-pin {
+#number-one {
 	height: 700px;
 }
 
@@ -166,48 +167,6 @@ blockquote {
 	text-shadow: none;
 }
 
-#easing span {
-	position: relative;
-	top:0;
-	left:0;
-}
-#easing_bottom {
-	width: 330px;
-	height: 13px;
-	margin: auto;
-	background: #131420;
-	border-bottom: 1px solid #30334F;
-	position: relative;
-	top: 276px;
-	border-radius: 2px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	-ms-border-radius: 4px;
-	border-radius: 4px;
-}
 
 
-.param-list {
-	color: #C5C3DE;
-	font-size: 18px;
-	line-height: 1.4;
-	padding: 0 18px;
-}
-
-.param-list li {
-	padding-bottom: 20px;
-	text-shadow: 0 2px 1px #000;
-}
-
-.param {
-	display: block;
-	color: #69697A;
-}
-
-.param-def small {
-	display: block;
-	font-weight: normal;
-	font-style: italic;
-}
 
