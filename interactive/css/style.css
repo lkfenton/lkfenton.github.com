@@ -77,34 +77,7 @@ blockquote {
 	padding-top: 100px;
 }
 
-.divider {
-	font-size: 14px;
-}
 
-
-
-.divider, .accent {
-	color: #69697A;
-	text-shadow: none;
-}
-
-#console {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 15px;
-	width: 500px;
-	margin: 0;
-	font-size: 14px;
-	font-style: italic;
-	background-color: #69697A;
-	text-shadow: none;
-	text-align: left;
-	padding: 3px 10px;
-	border-radius: 0 0 10px 10px;
-	z-index: 99;
-	opacity: .8;
-}
 
 #intro {
 	overflow: hidden;
@@ -130,7 +103,7 @@ blockquote {
 	padding:3%;
 }
 
-#examples-transition {
+#number-seven {
 	padding-top:25%;
 	overflow: hidden;
 }
@@ -168,5 +141,8 @@ blockquote {
 }
 
 
-
+#community{
+	margin-top:5%;
+	line-height:0;
+}
 
