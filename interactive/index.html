@@ -25,7 +25,7 @@
 <body>
 
 	<div class="scrollblock" id="intro">
-		<h1 id="title">Ten Things I've learned while living in Boston</h1>
+		<div id="title"><h2>Ten</h2><h1>Things I've learned<br>while living in Boston</h1></div>
 		<p id="scrolling">
 		<img src="images/scroll.gif"/>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -36,37 +36,20 @@
 
 	
 	<div class="scrollblock" id="number-one">
-		<h1>Number One</h1>
-		<p>
-		Living in Fenway Sucks<br>
-		<h3 id="rats"><img src="images/ratss.png"/></h3>
-		
-		<h3 id="unpin">There are rats EVERYWHERE</h3></p>
+		<h1>Number One:</h1>
+		<div id="rats"><img src="images/ratss.png"/></div>
+		<div>
+		<h3 id="unpin">Living near Fenway sucks.<br>There are rats EVERYWHERE</h3>
+		</div>
 	</div>
 	
-	<div class="scrollblock">
+	<div class="scrollblock" id=number-two>
 		<h1>Number Two</h1>
-		<span><img src="images/money.png" id="money"/><img src="images/no-money.png" id="no-money"/></h2><br>
+		<span><img src="images/new/money.png" id="money"/><img src="images/no-money.png" id="no-money"/></h2><br>
 		<h3 id="expensive">Jk! It's super expensive</h3>
 		</span>
 		
-		<h3 id="unpin2"><img src="images/bills.png"/></h3>
-	</div>
-	
-	<div class="scrollblock" id="car-traffic">
-			<span id="walking">
-				<img src="images/walking.gif"/>
-			</span>
-				
-			<span id="car">
-				<img src="images/car.gif"/><br>
-		 	</span>
-		 	
-		 	<span id="sidewalk">
-				<h1>Number Three</h1>
-				<p>Learning to stop for traffic</p>
-			</span>
-			
+		<h3 id="unpin2"></h3>
 	</div>
 	
 	
@@ -118,7 +101,7 @@
 			// animate some examples
 			scrollorama
 				.animate('#unpin',{ duration:500, property:'padding-top', start:500, pin:true })
-				.animate('#rats',{ delay: 250, duration: 200, property:'opacity', start:0 })
+				.animate('#rats',{ delay:250, duration: 200, property:'opacity', start:0 })
 				.animate('#no-money',{ delay: 900, duration: 150, property:'opacity', start:0 })
 				.animate('#expensive',{ delay: 900, duration: 200, property:'left', start:-1400, end:0 })
 				.animate('#unpin2',{ duration:900, property:'padding-top', start:1200, pin:true })
