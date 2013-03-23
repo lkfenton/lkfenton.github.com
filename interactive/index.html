@@ -45,19 +45,30 @@
 	
 	<div class="scrollblock" id=number-two>
 		<h1>Number Two</h1>
-		<span><img src="images/new/money.png" id="money"/><img src="images/no-money.png" id="no-money"/></h2><br>
+		<span><img src="images/new/money.png" id="money"/><img src="images/no-money.png" id="no-money"/>
 		<h3 id="expensive">Jk! It's super expensive</h3>
 		</span>
 		
 		<h3 id="unpin2"></h3>
 	</div>
 	
-	
-	<div class="scrollblock" id="number-four">
-		<h2 id="ducks"><img src="images/ducks.png"/></h2>
-		<h1 id="ducks2">Number Four</h1>
-		<h3 id="ducks3">I love the ducks!</h3>
+	<div class="scrollblock" id=number-three>
+		<h1>Number Three</h1>
+		<div id="hands"><img src="images/new/hands.png" id="money"/>
+		<h3 id="traffic">Learning to actually STOP for traffic</h3>
+		</div>
+		
 	</div>
+	
+	<!--CARD-->
+	
+	<div class="scrollblock">
+	<div class="under"><img src="images/new/duck-swan.png"/></div>
+		<div class="box type1" id="box1"><img src="images/new/ducks.png"/></div>
+		
+	</div>
+	
+	<!--END CARD-->
 	
 	<div class="scrollblock" id="bike">
 		<h1>Number Five</h1>
@@ -83,6 +94,18 @@
 	
 	
 <script>
+
+$(function() {
+    function eventCallback() {
+      $(".box").fadeOut();
+      // $(this).fadeOut();
+    }
+
+    $(".box").on("click",eventCallback);
+
+});
+
+
 		$(document).ready(function() {
 			
 			// initialize the plugin, pass in the class selector for the sections of content (blocks)
@@ -105,24 +128,20 @@
 				.animate('#no-money',{ delay: 900, duration: 150, property:'opacity', start:0 })
 				.animate('#expensive',{ delay: 900, duration: 200, property:'left', start:-1400, end:0 })
 				.animate('#unpin2',{ duration:900, property:'padding-top', start:1200, pin:true })
+				.animate('#hands',{ delay: 250, duration: 400, property:'zoom', start:2 })
 				.animate('#unpin3',{ duration:400, property:'padding-top', start:700, pin:true })
 				.animate('#unpin4',{ duration:520, property:'padding-top', start:1500, pin:true })
 				.animate('#blow-up',{ delay: 150, duration: 400, property:'zoom', start:3 })
 				.animate('#walking',{ delay: 200, duration: 600, property:'left', start:-1400, end:0 })
 				.animate('#pink-bike',{ delay: 200, duration: 400, property:'right', start:-1400, end:1400 });
-				
-				
-
+		
 			
-			// animate the parallaxing
-			scrollorama
 			
-				.animate('#ducks2',{ delay: 400, duration: 600, property:'top', start:800, end:-800 })
-				.animate('#ducks3',{ delay: 200, duration: 1200, property:'top', start:500, end:-500 });
+			});
 			
 			
 			
-		});
+			
 </script>
 
 

@@ -108,6 +108,11 @@ ul {
 		color:#20af4b;
 }
 
+#number-three{
+	background-color:#525252;
+	height:800px;
+}
+
 #unpin2{
 	padding:3%;
 }
@@ -157,5 +162,26 @@ ul {
 }
 
 
+.under{
+	width:390px;
+	height:390px;
+	margin-top:5%;
+  	margin-left:35%;
+}
 
+.box { 
+	position:absolute;
+	width:390px;
+	height:390px; 
+  margin-top:-30%;
+  margin-left:35%; 
+  text-align:center; 
+  padding:20px 0px;
+  border-radius:5px;
+  box-shadow: 5px 5px 5px #CCC;
+  color:white;
+  font-size:2em;
+}
+
+.type1 { background-color:#7fcbbf; }
 
