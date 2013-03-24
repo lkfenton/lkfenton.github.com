@@ -28,7 +28,7 @@
 		<div id="title"><h2>Ten</h2><h1>Things I've learned<br>while living in Boston</h1></div>
 		<p id="scrolling">
 		<img src="images/scroll.gif"/>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		
 		</p>
 		
 	
@@ -62,7 +62,8 @@
 	
 	<!--CARD-->
 	
-	<div class="scrollblock">
+	<div class="scrollblock" id="number-four">
+	<h1>Number Four</h1>
 	<div class="under"><img src="images/new/duck-swan.png"/></div>
 		<div class="box type1" id="box1"><img src="images/new/ducks.png"/></div>
 		
@@ -72,26 +73,51 @@
 	
 	<div class="scrollblock" id="bike">
 		<h1>Number Five</h1>
+		<h2 id='riding'>Riding a bike saves so much money!</h2>
+		<h3 id="pink-bike"><img src="images/new/bike.png"/></h3>
 		
-		<h3 id="pink-bike"><img src="images/bike.png"/></h3>
-		
-		<h3 id="unpin3">Just remember to lock it up</h3></p>
+		<h3>Just remember to lock it up</h3>
 	</div>
 	
-	
-		<div class="scrollblock" id="community">
-	
-		<h1 id="blow-up">Number Six</h1>
-		<img src='images/community.gif'/><br>
-		<h3 id="unpin4">Diversity is Awesome</h3>
+
+	<div class="scrollblock" id=pru>
+		<h1>Number Six</h1>
+		<span id="building"/><img src="images/new/prudential.png"></span>
+		<span id="plane"><img src="images/new/plane.png"/>
+		</span>
 		
-		</div>
-	
-	<div class="scrollblock" id="number-seven">
-		
-	
 	</div>
 	
+	<div class="scrollblock" id=community>
+		<h1>Number Seven</h1>
+		<span id="people"/><img src="images/community.gif"></span>
+		
+		<h3 id="unpin4">The community is awesome</h3>
+	</div>
+	
+	<div class="scrollblock" id=going>
+		<h1 id='go'>#8<br>GO<br>GO<br>GO</h1>
+		
+		
+	</div>
+	
+	<div class="scrollblock" id=blueman>
+		<h1>Number Nine: The blueman group is worth seeing</h1>
+		<h1 id="appear"><img src='images/new/blueman.gif'/></h1>
+		
+		
+	</div>
+	
+	<div class="scrollblock" id=end>
+		<h1>Lastly,</h1> 
+		<h2>I have learned<br>
+			that Boston is<br> 
+			the city for me.</h2>
+			
+		<h3>A JS study by Leah Fenton<br>
+			Using plugin Scrollorama<br>
+			Massart Spring 2013</h3>
+	</div>
 	
 <script>
 
@@ -128,15 +154,12 @@ $(function() {
 				.animate('#no-money',{ delay: 900, duration: 150, property:'opacity', start:0 })
 				.animate('#expensive',{ delay: 900, duration: 200, property:'left', start:-1400, end:0 })
 				.animate('#unpin2',{ duration:900, property:'padding-top', start:1200, pin:true })
-				.animate('#hands',{ delay: 250, duration: 400, property:'zoom', start:2 })
-				.animate('#unpin3',{ duration:400, property:'padding-top', start:700, pin:true })
-				.animate('#unpin4',{ duration:520, property:'padding-top', start:1500, pin:true })
-				.animate('#blow-up',{ delay: 150, duration: 400, property:'zoom', start:3 })
-				.animate('#walking',{ delay: 200, duration: 600, property:'left', start:-1400, end:0 })
-				.animate('#pink-bike',{ delay: 200, duration: 400, property:'right', start:-1400, end:1400 });
-		
-			
-			
+				.animate('#hands',{ delay: 250, duration: 400, property:'zoom', start:1})
+				.animate('#plane', {delay: 700, duration: 1000, property:'left', start:200, end:-15000})	
+				.animate('#pink-bike',{ delay: 200, duration: 600, property:'right', start:-1400, end:0 })
+				.animate('#unpin4',{ duration:700, property:'padding-top', start:3000, pin:true })
+				.animate('#go', { duration: 600, property:'rotate', start:2400 })
+				.animate('#appear',{ delay:600, duration: 400, property:'opacity', start:0 })
 			});
 			
 			

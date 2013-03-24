@@ -117,71 +117,114 @@ ul {
 	padding:3%;
 }
 
-#number-seven {
-	padding-top:25%;
-	overflow: hidden;
-}
-
-#car-traffic{
-	padding-top:20%;
-}
-
 #number-four{
 	overflow: hidden;
+	background-color:#b4d260;
+	height:770px;
 }
 
-#ducks2 {
-	position: absolute;
-	top: 200px;
-	left:250px;
-	color: #ae0079;
-	opacity: .5;
-	font-size: 3em;
-	text-shadow: none;
-}
+
 
 #bike{
-	margin-top:0;
 	overflow:hidden;
+	height:800px;
 }
 
-#ducks3 {
-	position: absolute;
-	top: 320px;
-	right: 400px;
-	color: #ae0079;
-	opacity: .4;
-	font-size: 2em;
-	text-shadow: none;
-}
-
-
-#community{
-	margin-top:5%;
-	line-height:0;
+#bike h3{
+	color:black;
 }
 
 
 .under{
 	width:390px;
 	height:390px;
-	margin-top:5%;
+	margin:-2%;
   	margin-left:35%;
+}
+
+#number-four h1{
+	color:white;
 }
 
 .box { 
 	position:absolute;
 	width:390px;
 	height:390px; 
-  margin-top:-30%;
+  margin-top:-270px;
   margin-left:35%; 
-  text-align:center; 
   padding:20px 0px;
-  border-radius:5px;
-  box-shadow: 5px 5px 5px #CCC;
-  color:white;
-  font-size:2em;
+
 }
 
-.type1 { background-color:#7fcbbf; }
+.type1 { background-color:#b4d260; }
 
+#riding {
+	margin-top:-40px;
+	padding-bottom:15px;
+}
+
+#bike h2{
+	color:#7fcbbf;
+}
+
+
+#pru {
+	padding-bottom:10%;
+}
+
+#community{
+	background-color:#e3dfd6;
+	height:770px;
+}
+
+
+#community h3{
+	color:#888683;
+}
+
+
+#going {
+
+	height:770px;
+	background-color:#76a31f;
+}
+
+#going h1{
+	line-height:1.2em;
+	padding:0;
+	color:white;
+	font-size:7em;
+}
+
+#blueman{
+	background-color:black;
+	height:800px;
+}
+
+#blueman h1{
+	color:white;
+	font-size:2em;
+}
+
+
+#end{
+	height:770px;
+}
+
+#end h1{
+	font-size:5em;
+}
+
+#end h2{
+	color:#f71635;
+	margin-top:-10%;
+	font-size:2em;
+	font-family:"Arial Black",Gadget,sans-serif;
+}
+
+#end h3{
+	color:#f71635;
+	padding-top:300px;
+	font-size:1em;
+	line-height:1.6em;
+}
