@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<title>Boston </title>
 	
-	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	
@@ -13,7 +13,7 @@
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.lettering-0.6.1.min.js"></script>
 	<script src="js/jquery.scrollorama.js"></script>
-	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	
 	
 
 </head>
@@ -134,10 +134,10 @@ $(function() {
 
 		$(document).ready(function() {
 			
-			// initialize the plugin, pass in the class selector for the sections of content (blocks)
+			
 			var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
 			
-			// assigßn function to add behavior for onBlockChange event
+			
 			scrollorama.onBlockChange(function() {
 				var i = scrollorama.blockIndex;
 				$('#console')
@@ -147,7 +147,7 @@ $(function() {
 			
 			
 		
-			// animate some examples
+			
 			scrollorama
 				.animate('#unpin',{ duration:500, property:'padding-top', start:500, pin:true })
 				.animate('#rats',{ delay:250, duration: 200, property:'opacity', start:0 })
