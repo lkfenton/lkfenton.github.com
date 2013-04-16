@@ -5,8 +5,8 @@ $(function() {
 		while(i < data.length) {
 		var badCrimes = data[i];
 		
- 	var incidentWidth = parseInt(incidents,10); 
-		var domesticWidth = parseInt(domestic,10);
+ 	var incidentWidth = parseInt(incidents,5); 
+		var domesticWidth = parseInt(domestic,5);
 
 		var town = badCrimes.name;
 		var incidents = badCrimes.incidents;
