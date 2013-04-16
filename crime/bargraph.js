@@ -13,11 +13,6 @@ $(function() {
 		var domestic = badCrimes.domestic;	
 	
 	
-		
-		
-
-
-		
 
 
 

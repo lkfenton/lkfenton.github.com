@@ -74,13 +74,14 @@ body p{
 	height:70px;
 	margin-bottom:20px;
 	padding-bottom:30px;
-	stroke-bottom:blue;
+	
 }
 
 .bar-container {
 margin-top:20px;
+max-width:600px;
 	height:70px;
-	max-width:550px;
+	
 	overflow:hidden;
 }
 
@@ -90,13 +91,19 @@ margin-top:20px;
 }
 
 .incidents {
-	background:purple;
+	background:#FFB600;
 	margin-bottom:15px;
 	height:20px;
+	border-bottom-style:solid;
+	border-color:#D3D3D3;
+	border-width:3px;
 
 	
 }
 .domestic {
 	height:20px;
-	background:#000000;
+	background:#00CFFF;
+	border-bottom-style:solid;
+	border-color:#D3D3D3;
+	border-width:3px;
 }
