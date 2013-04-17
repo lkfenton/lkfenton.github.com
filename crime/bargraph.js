@@ -5,12 +5,15 @@ $(function() {
 		while(i < data.length) {
 		var badCrimes = data[i];
 		
- 	var incidentWidth = parseInt(incidents,5); 
-		var domesticWidth = parseInt(domestic,5);
+		var maxIncidents = 15000; 
+		var maxWidth= 500; 
 
 		var town = badCrimes.name;
 		var incidents = badCrimes.incidents;
 		var domestic = badCrimes.domestic;	
+
+ 	    var incidentWidth = incidents / maxIncidents * maxWidth; 
+		var domesticWidth = domestic / maxIncidents * maxWidth;
 	
 	
 
