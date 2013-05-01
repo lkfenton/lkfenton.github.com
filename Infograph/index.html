@@ -3,19 +3,25 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Decade of Design</title>
-
+		<link href='http://fonts.googleapis.com/css?family=Abel|Buenard:400,700' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript">
+
+
 $(function () {
         $('#container').highcharts({
             chart: {
                 type: 'line',
                 marginRight: 130,
-                marginBottom: 25
+                marginBottom: 25,
+                marginTop: 80,
+                
             },
+            
             title: {
-                text: 'Annual Average Salary',
-                x: -20 //center
+            	text: 'Graphic Design Salary history',
+                x: -20
+                
             },
             subtitle: {
                 text: '',
@@ -27,7 +33,10 @@ $(function () {
             },
             yAxis: {
                 title: {
-                    text: 'Average Salary (ex. 70 = 70,000)'
+                
+               		spacingBottom: 50,
+                	text: 'Average Salary (ex. 70k = 70,000)',
+                	
                 },
               
                 plotLines: [{
@@ -37,12 +46,15 @@ $(function () {
                 }]
             },
            
+           colors: ['#f4a917','#c3f417','#17f47a','#17ddf4','#1775f4','#f43617','#7f17f4','#d717f4','#f417a9','#afadad','#3b2f3a','#16967c','#963116','#16964f','#f7f400'],
+           
+           
             legend: {
                 layout: 'vertical',
                 align: 'right',
                 verticalAlign: 'top',
-                x: 45,
-                y: 50,
+                x: 55,
+                y: 60,
                 borderWidth: 0,
             
             },
@@ -68,17 +80,26 @@ $(function () {
                 name: 'Entry lvl Designer',
                 data: [22000, 29000, 23000, 23500, 25000, 28000, 30000, 29000, 32000, 32000, 35000]
             }, {
-                name: 'Print Production',
+                name: 'Print Pro. artist',
                 data: [35000, 38000, 40000, 40000, 40000, 40000, 44000, 45000, 48000, 45000, 43000]
             }, {
                 name: 'Front End Web',
                 data: [45000, 51000, 50000, 50000, 50000, 53000, 53500, 55000, 55000, 55000, 57000]
             }, {
                 name: 'Solo Designer',
-                data: [51000, 40500, 56000, 55000, 55000, 60000, 60000, 60000, 60000, 57000, 51000]
+                data: [51000, 50500, 56000, 55000, 55000, 60000, 60000, 60000, 60000, 57000, 51000]
             }, {
                 name: 'Creative Director',
                 data: [85000, 84000, 85000, 85000, 85000, 90000, 94500, 98600, 100000, 97000, 100000]
+            }, {
+                name: 'Marketing',
+                data: [null, null, null, 70000, 75000, 75000, 77000, 80000, 80000, 75000, 80000]
+            }, {
+                name: 'Content Developer',
+                data: [65000, 68000, 75000, 65000, 65000, 65000, 63000, 59000, 60000, 51000, 55000]
+            }, {
+                name: 'Print Pro. Manager',
+                data: [50000, 48000, 50000, 51000, 54000, 55000, 59000, 63000, 63000, 60000, 64000]
             }]
         });
     });
@@ -88,7 +109,7 @@ $(function () {
 	</head>
 	<body>
 <script src="js/highcharts.js"></script>
-<script src="js/modules/exporting.js"></script>
+<script src="js/styling.js"></script>
 
 <div id="container" style="width: 1000px; height: 600px; margin: 0 auto"></div>
 
