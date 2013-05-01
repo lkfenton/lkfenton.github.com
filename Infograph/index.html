@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Decade of Design</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'line',
+                marginRight: 130,
+                marginBottom: 25
+            },
+            title: {
+                text: 'Annual Average Salary',
+                x: -20 //center
+            },
+            subtitle: {
+                text: '',
+                x: -20
+            },
+            xAxis: {
+                categories: ['2000', '2001', '2002', '2003', '2004', '2005',
+                    '2006', '2007', '2008', '2009', '2010']
+            },
+            yAxis: {
+                title: {
+                    text: 'Average Salary (ex. 70 = 70,000)'
+                },
+              
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+           
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: 50,
+                y: 50,
+                borderWidth: 0,
+            
+            },
+            series: [{
+                name: 'Art Director',
+                data: [68000, 65000, 62000, 56000, 56500, 61000, 64000, 65000, 65000, 65000, 65000]
+            }, {
+                name: 'Copy Writer',
+                data: [44000, 50000, 55000, 59000, 59000, 55000, 59800, 63000, 60000, 60000, 62000]
+            }, {
+                name: 'Owner/Partner',
+                data: [100000, 100000, 100000, 93000, 100000, 100000, 105500, 111000, 105000, 101000, 110000]
+            }, {
+                name: 'Senior Designer',
+                data: [52300, 55000, 52300, 55000, 55000, 59600, 62000, 65000, 65000, 65000, 65000]
+            }, {
+                name: 'Web Executive Producer',
+                data: [55000, 62000, 61600, 60000, 65000, 65000, 66800, 71300, 75000, 70000, 71000]
+            }, {
+                name: 'Designer',
+                data: [38500, 40000, 40000, 40000, 41000, 44000, 44900, 45000, 45000, 45000, 45000]
+            }, {
+                name: 'Entry lvl Designer',
+                data: [22000, 29000, 23000, 23500, 25000, 28000, 30000, 29000, 32000, 32000, 35000]
+            }, {
+                name: 'Print Production',
+                data: [35000, 38000, 40000, 40000, 40000, 40000, 44000, 45000, 48000, 45000, 43000]
+            }, {
+                name: 'Front End Web',
+                data: [45000, 51000, 50000, 50000, 50000, 53000, 53500, 55000, 55000, 55000, 57000]
+            }, {
+                name: 'Solo Designer',
+                data: [51000, 40500, 56000, 55000, 55000, 60000, 60000, 60000, 60000, 57000, 51000]
+            }]
+        });
+    });
+    
+
+		</script>
+	</head>
+	<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+<div id="container" style="width: 1000px; height: 600px; margin: 0 auto"></div>
+
+	</body>
+</html>

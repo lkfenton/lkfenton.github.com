@@ -9,25 +9,37 @@
 
         // Add in a marker:
 
+      var myHeatmapData = [];
       
        var i = 0;
   	   while (i < potholes.length) {
        var pothole = potholes[i];
           
+          
         var lat = pothole.LATITUDE;  
         var lon = pothole.LONGITUDE;
         
-         		var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(lat, lon),
-        title: "Potholes",
-        map: myMap
+        
+        myHeatmapData.push(
+          new google.maps.LatLng(pothole.LATITUDE,pothole.LONGITUDE)  
+        ) 
+        
+        //markers
+        //var marker = new google.maps.Marker({
+        //position: new google.maps.LatLng(lat, lon),
+        //title: "Potholes",
+        //map: myMap
 
-      });
-  
-
-  
        i++;
        }
+       
+       
+       
+       var heatmap = new google.maps.visualization.HeatmapLayer({
+        data: myHeatmapData,
+        radius: 25
+      });
+      heatmap.setMap(myMap);
 
     });
    
