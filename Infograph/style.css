@@ -1,0 +1,28 @@
+<style>
+  .card { 
+    position:relative;
+    width:200px; 
+    height:200px;
+  }
+
+ .card > div {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    height:200px;
+    text-align:center;
+  }
+
+  .card .front {
+    z-index:2;
+    background:url(images/fuck.png) no-repeat left top;
+  }
+
+  .card .back {
+    z-index:1;
+    background:url(images/you.png) no-repeat left top;
+  }
+  
+  .card:hover .front { z-index: 1;}
+  .card:hover .back  { z-index:2;}
