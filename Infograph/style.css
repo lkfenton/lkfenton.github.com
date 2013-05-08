@@ -1,28 +1,44 @@
-<style>
-  .card { 
+.card { 
     position:relative;
-    width:200px; 
-    height:200px;
+    width:131px; 
+    height:155px;
+    float:left;
+    margin-right:20px;
   }
 
- .card > div {
+  .card > div {
     position:absolute;
     top:0px;
     left:0px;
-    width:200px;
-    height:200px;
+    width:130px;
+    height:160px;
     text-align:center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
   }
 
   .card .front {
+    position:relative;
     z-index:2;
-    background:url(images/fuck.png) no-repeat left top;
+    -webkit-transform: rotate(0deg) rotateY(0deg);
+    background:url(images/you.png) no-repeat left top;
   }
 
   .card .back {
-    z-index:1;
-    background:url(images/you.png) no-repeat left top;
+    background:url(images/fuck.png) no-repeat left top;
   }
-  
-  .card:hover .front { z-index: 1;}
-  .card:hover .back  { z-index:2;}
+
+  .card .back p {
+    padding-top:5px;
+  }
+
+  .card:hover .front {
+     z-index: 1;
+
+  }
+
+  .card:hover .back {
+    z-index:2;
+    -webkit-transform: rotateY(0deg);
+  }
