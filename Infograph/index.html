@@ -53,7 +53,7 @@ $(function () {
            colors: ['#f4a917','#c3f417','#17f47a','#17ddf4','#1775f4','#f43617','#7f17f4','#d717f4','#f417a9','#afadad','#3b2f3a','#16967c','#963116','#16964f','#f7f400'],
            
            
-           
+          
            
             legend: {
             	 
@@ -116,6 +116,8 @@ $(function () {
 		</script>
 		
 		<script>
+		// CARD ONE STARTS HERE FACEBOOK
+		
 $(function() {
     var x = 0;
     while(x < 1) {
@@ -132,8 +134,27 @@ $(function() {
     }
   // Event handler
 });
+	//CARD TWO STARTS HERE IPHONE
+$(function() {
+    var x = 0;
+    while(x < 1) {
+      var card = $("<div class='card2'><div class='front2'></div><div class='back2'><p></p></div></div>");
+
+
+
+      card.on("click",function() {
+        $(this).toggleClass("flip2");
+      });
+
+      $("#card-container2").append(card);
+      x++;
+    }
+  // Event handler
+});
 
 </script>
+
+
 	</head>
 	<body>
 <script src="js/highcharts.js"></script>
@@ -143,5 +164,9 @@ $(function() {
 <div id="container" style="width: 1000px; height: 600px; margin: 0 auto"></div>
 
 <div id='card-container'></div>
+
+<div id='card-container2'></div>
+
+<div id='block'</div>
 	</body>
 </html>

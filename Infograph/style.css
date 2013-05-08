@@ -1,5 +1,12 @@
 
-
+#block {
+	width:100px;
+	height:100px;
+	background-color:white;
+	position:relative;
+	margin-left:1125px;
+	margin-top:-50px;
+}
 
 
   .card { 
@@ -48,6 +55,62 @@
   }
 
   .flip .back {
+    z-index:2;
+    -webkit-transform: rotateY(0deg);
+  }
+  
+  
+  
+  
+  /*SECOND CARD STARTS HERE*/
+  
+  
+    .card2 { 
+    position:relative;
+    width:150px; 
+    height:180px;
+    float:left;
+    margin-left:50px;
+    
+    margin-bottom:10px;
+  }
+
+  .card2 > div {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:150px;
+    height:180px;
+    text-align:center;
+  
+    -webkit-backface-visibility: hidden;
+   
+  }
+
+
+  .card2 .front2 {
+    position:relative;
+    z-index:2;
+  
+    background:url(images/iphone.png) no-repeat left top;
+  }
+
+  .card2 .back2 {
+    z-index:1;
+   
+    background:url(images/iphone-copy.png) no-repeat left top;
+  }
+
+.card2:hover .front2 {
+     background:url(images/iphoneblue.png) no-repeat left top;
+  }
+
+  .flip2 .front2 {
+     z-index: 1;
+     -webkit-transform: rotateY(180deg);
+  }
+
+  .flip2 .back2 {
     z-index:2;
     -webkit-transform: rotateY(0deg);
   }
