@@ -13,7 +13,7 @@ $(function () {
         $('#container').highcharts({
             chart: {
                 type: 'line',
-                marginRight: 130,
+                marginRight: 160,
                 marginBottom: 25,
                 marginTop: 50,
                 
@@ -25,9 +25,12 @@ $(function () {
                 
             },
             subtitle: {
-                text: '',
-                x: -20
+                text: 'Professions',
+                x: 400,
+                y:50,
             },
+           
+            
             xAxis: {
                 categories: ['2000', '2001', '2002', '2003', '2004', '2005',
                     '2006', '2007', '2008', '2009', '2010']
@@ -35,7 +38,7 @@ $(function () {
             yAxis: {
                 title: {
                 
-               		spacingBottom: 50,
+               		spacingRight:90,
                 	text: 'Average Salary (ex. 70k = 70,000)',
                 	
                 },
@@ -50,13 +53,17 @@ $(function () {
            colors: ['#f4a917','#c3f417','#17f47a','#17ddf4','#1775f4','#f43617','#7f17f4','#d717f4','#f417a9','#afadad','#3b2f3a','#16967c','#963116','#16964f','#f7f400'],
            
            
+           
+           
             legend: {
+            	 
                 layout: 'vertical',
                 align: 'right',
                 verticalAlign: 'top',
-                x: 55,
+                x: 15,
                 y: 60,
                 borderWidth: 0,
+               
             
             },
             series: [{

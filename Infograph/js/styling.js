@@ -13,6 +13,15 @@ Highcharts.setOptions({
        
       }
    },
+    subtitle: {
+         style: {
+           color: 'gray',
+           font: '15px "Abel", Abel, sans-serif',
+
+                     
+      }
+   },
+   
     xAxis: {
       gridLineWidth: 1,
       lineColor: 'gray',
@@ -33,6 +42,7 @@ Highcharts.setOptions({
          }            
       }
    },
+  
    yAxis: {
       minorTickInterval: 'auto',
       lineColor: '#000',
