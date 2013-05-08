@@ -118,7 +118,7 @@
   
   
   
-   /*THIRD CARD STARTS HERE html5 */
+   /*THIRD CARD STARTS HERE youtube */
   
   
     .card3 { 
@@ -126,7 +126,7 @@
     width:150px; 
     height:180px;
     float:left;
-    margin-left:50px;
+    margin-left:-225px;
     
     margin-bottom:10px;
   }
@@ -158,7 +158,7 @@
   }
 
 .card3:hover .front3 {
-     background:url(images/youtube-hover.png) no-repeat left top;
+     background:url(images/youtubehover.png) no-repeat left top;
   }
 
   .flip3 .front3 {
