@@ -15,7 +15,7 @@ $(function () {
                 type: 'line',
                 marginRight: 130,
                 marginBottom: 25,
-                marginTop: 80,
+                marginTop: 50,
                 
             },
             
@@ -107,6 +107,26 @@ $(function () {
     
 
 		</script>
+		
+		<script>
+$(function() {
+    var x = 0;
+    while(x < 1) {
+      var card = $("<div class='card'><div class='front'></div><div class='back'><p></p></div></div>");
+
+
+
+      card.on("click",function() {
+        $(this).toggleClass("flip");
+      });
+
+      $("#card-container").append(card);
+      x++;
+    }
+  // Event handler
+});
+
+</script>
 	</head>
 	<body>
 <script src="js/highcharts.js"></script>
@@ -115,12 +135,6 @@ $(function () {
 
 <div id="container" style="width: 1000px; height: 600px; margin: 0 auto"></div>
 
-
-<div class='card'>
-  <div class='front'></div>
-  <div class='back'><p>Facebook launched in 2004 by Mark Zuckerberg. 
-  Completely changed social networking.  </p></div>
-</div>
-
+<div id='card-container'></div>
 	</body>
 </html>
