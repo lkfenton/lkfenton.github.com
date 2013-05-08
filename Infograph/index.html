@@ -152,6 +152,24 @@ $(function() {
   // Event handler
 });
 
+	//CARD Three STARTS HERE youtube
+$(function() {
+    var x = 0;
+    while(x < 1) {
+      var card = $("<div class='card3'><div class='front3'></div><div class='back3'><p></p></div></div>");
+
+
+
+      card.on("click",function() {
+        $(this).toggleClass("flip3");
+      });
+
+      $("#card-container3").append(card);
+      x++;
+    }
+  // Event handler
+});
+
 </script>
 
 
@@ -166,6 +184,8 @@ $(function() {
 <div id='card-container'></div>
 
 <div id='card-container2'></div>
+
+<div id='card-container3'></div>
 
 <div id='block'</div>
 	</body>

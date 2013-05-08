@@ -8,6 +8,7 @@
 	margin-top:-50px;
 }
 
+/*First card starts here facebook*/
 
   .card { 
     position:relative;
@@ -62,7 +63,7 @@
   
   
   
-  /*SECOND CARD STARTS HERE*/
+  /*SECOND CARD STARTS HERE iphone*/
   
   
     .card2 { 
@@ -111,6 +112,61 @@
   }
 
   .flip2 .back2 {
+    z-index:2;
+    -webkit-transform: rotateY(0deg);
+  }
+  
+  
+  
+   /*THIRD CARD STARTS HERE html5 */
+  
+  
+    .card3 { 
+    position:relative;
+    width:150px; 
+    height:180px;
+    float:left;
+    margin-left:50px;
+    
+    margin-bottom:10px;
+  }
+
+  .card3 > div {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:150px;
+    height:180px;
+    text-align:center;
+  
+    -webkit-backface-visibility: hidden;
+   
+  }
+
+
+  .card3 .front3 {
+    position:relative;
+    z-index:2;
+  
+    background:url(images/youtube.png) no-repeat left top;
+  }
+
+  .card3 .back3 {
+    z-index:1;
+   
+    background:url(images/youtube-text.png) no-repeat left top;
+  }
+
+.card3:hover .front3 {
+     background:url(images/youtube-hover.png) no-repeat left top;
+  }
+
+  .flip3 .front3 {
+     z-index: 1;
+     -webkit-transform: rotateY(180deg);
+  }
+
+  .flip3 .back3 {
     z-index:2;
     -webkit-transform: rotateY(0deg);
   }
